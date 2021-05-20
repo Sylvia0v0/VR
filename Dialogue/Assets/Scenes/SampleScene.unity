@@ -155,8 +155,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -112.5}
-  m_SizeDelta: {x: 500, y: 25}
+  m_AnchoredPosition: {x: 0, y: -125}
+  m_SizeDelta: {x: 600, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &519394094
 MonoBehaviour:
@@ -207,8 +207,9 @@ GameObject:
   - component: {fileID: 613548443}
   - component: {fileID: 613548442}
   - component: {fileID: 613548441}
+  - component: {fileID: 613548445}
   m_Layer: 0
-  m_Name: NPC3
+  m_Name: "\u8DEF\u897F\u6CD5"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -289,6 +290,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &613548445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613548440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f071f61fcae910c4e95b2af308bdb7c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc: {fileID: 11400000, guid: fc536cc2be4ad9d49ade79736f28d679, type: 2}
+  player: {fileID: 1792892976}
+  dialogueUI: {fileID: 1280476620}
+  npcName: {fileID: 2122320921}
+  npcDialogueBox: {fileID: 829841360}
+  playerResponse: {fileID: 747432067}
 --- !u!1 &695760510
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,8 +533,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.5224, y: -190}
-  m_SizeDelta: {x: 584.2714, y: 30}
+  m_AnchoredPosition: {x: 0.30019, y: -232}
+  m_SizeDelta: {x: 662.4749, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &747432067
 MonoBehaviour:
@@ -538,7 +557,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -592,8 +611,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.9, y: -129.3}
-  m_SizeDelta: {x: 559.78796, y: 68.40987}
+  m_AnchoredPosition: {x: 0.3, y: -144}
+  m_SizeDelta: {x: 662.4745, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &829841360
 MonoBehaviour:
@@ -616,7 +635,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -650,7 +669,7 @@ GameObject:
   - component: {fileID: 912924754}
   - component: {fileID: 912924758}
   m_Layer: 0
-  m_Name: NPC1
+  m_Name: "\u746A\u9580"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -725,7 +744,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912924753}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: 1.5, z: 0}
+  m_LocalPosition: {x: 0, y: 1.5, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -844,8 +863,9 @@ GameObject:
   - component: {fileID: 1088820368}
   - component: {fileID: 1088820367}
   - component: {fileID: 1088820366}
+  - component: {fileID: 1088820370}
   m_Layer: 0
-  m_Name: NPC2
+  m_Name: "\u85A9\u9EA5\u723E"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -920,12 +940,30 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1088820365}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: 4}
+  m_LocalPosition: {x: 4, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1088820370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088820365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f071f61fcae910c4e95b2af308bdb7c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc: {fileID: 11400000, guid: 5deb1891f4a2afc4ea72a128ed932927, type: 2}
+  player: {fileID: 1792892976}
+  dialogueUI: {fileID: 1280476620}
+  npcName: {fileID: 2122320921}
+  npcDialogueBox: {fileID: 829841360}
+  playerResponse: {fileID: 747432067}
 --- !u!1 &1280476620
 GameObject:
   m_ObjectHideFlags: 0
@@ -1310,8 +1348,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -211, y: -74.093}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -234.3, y: -77.094}
+  m_SizeDelta: {x: 206.56711, y: 36.002075}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2122320921
 MonoBehaviour:
@@ -1334,7 +1372,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
